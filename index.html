@@ -1,128 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal WEb</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color-1.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <header>
-        <div class="Name">
-            <h1>Y<span>awar</span></h1>
-        </div>
-        <nav>
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home" ></i> Home</a></li>
-                <li><a href="#about"><i class="fa fa-user" ></i> About</a></li>
-                <li><a href="#service"><i class="fa fa-list" ></i> Service</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#contact"><i class="fa fa-comments" ></i> Contact</a></li>
-            </ul>
-        </nav>
-       
-        <div class="mode">
-            <span>
-                <i class="fa-solid fa-moon fa-mode" id="dark-mode" ></i>
-                <i class="fa-solid fa-sun fa-mode" id="light-mode" style="display: none;"></i></span>
-        </div>
-     
-    </header>
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <div class="container">
-            <!-- Home page  -->
-        <section class="home" id="home">
-            <div class="home-content">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-                <div class="dev-name"><h3>I am  <span id="my-jobs">Software Architect</span></h3></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ex voluptates eum odit reprehenderit aperiam, facere delectus aliquid atque non tenetur vitae necessitatibus rem, laborum culpa eius possimus, quibusdam soluta minima sapiente odio maxime?</p>
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Marlon</a>
+                </div>
 
-                <a href="#" class="btn">Hire Me</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Marlon</h2>
+                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Marlon</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <div class="home-image blur-box">
-
-                <div class="image-box" >
-                    <img src="./image3.jpg" alt="" id="player-image">
-                </div>
-                <div class="row">
-                   <i class="fa-solid fa-backward-step" id="prev-image"></i> <div class="image-title" id="image-title">This is title</div><i class="fa-solid fa-forward-step" id="next-image"></i>
-                </div>
-
-            </div>
-        </section>
-        <!-- ABout us  -->
-        <section class="about" id="about">
-
-            <h1 style="text-align: center;">About Me</h1>
-            <div class="working-about">
-                    <div class="box" id="project-success">
-                       <i class="fa-solid fa-square-check fa-wa" ></i>
-                        <p></p>
-                        <h5>Success</h5>
-                    </div>
-                    <div class="box" id="project-pending">
-                        <i class="fa-solid fa-hourglass-half fa-wa"></i>
-                        <p>60+</p>
-                        <h5>Pending</h5>
-                    </div>
-                    <div class="box" id="project-working">
-                        <i class="fa-solid fa-list-check fa-wa"></i>
-                        <p>90+</p>
-                        <h5>Working</h5>
-                    </div>
-            </div>
-
-            
-        </section>
+            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        </footer>
 
 
-        <h1>Our Service</h1>
-        <section class="service" id="service">
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-                <div class="box">
-                    <div class="image">
-                        <img src="./portfolio/portfolio-1.jpg" alt="">
-                    </div>
-                    <span><h4>Hello</h4></span>
-                    <article>THis is article</article>
-                    <button class="btn">See more</button>
-                </div>
-                <div class="box">
-                    <div class="image">
-                        <img src="./portfolio/portfolio-2.jpg" alt="">
-                    </div>
-                    <span><h4>Hello</h4></span>
-                    <article>THis is article</article>
-                    <button class="btn">See more</button>
-                </div>
-                <div class="box">
-                    <div class="image">
-                        <img src="./portfolio/portfolio-3.jpg" alt="">
-                    </div>
-                    <span><h4>Hello</h4></span>
-                    <article>THis is article</article>
-                    <button class="btn">See more</button>
-                </div>
-                <div class="box">
-                    <div class="image">
-                        <img src="./portfolio/portfolio-4.jpg" alt="">
-                    </div>
-                    <span><h4>Hello</h4></span>
-                    <article>THis is article</article>
-                    <button class="btn">See more</button>
-                </div>
-
-
-        </section>
-        <!-- // Contact page  -->
-         
-    </div>
-
-
-    <script src="script.js"></script>
-</body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
