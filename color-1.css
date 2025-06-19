@@ -1,0 +1,243 @@
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --skin-color: #ec1839;
+    --Poppin_font: 'Poppins';
+    --Clikes_font: 'Clicker Script';
+    --transprant_bg: rgba(255, 255, 255, 0.4)
+}
+
+.container .home {
+    flex: 0 0 100%;
+    width: 100%;
+    /* background-color: red; */
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.container .home .home-content {
+    width: 60%;
+    /* background-color: blue; */
+    height: 60vh;
+    padding: 10px 65px;
+    position: relative;
+    left: 40px;
+}
+
+.container .home .home-content .dev-name {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 10px;
+
+}
+
+.container .home .home-content p {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+
+.container .home .home-content .dev-name span {
+    color: var(--skin-color);
+}
+
+.btn {
+    background: var(--skin-color);
+    color: var(--text-black-900);
+    padding: 10px 15px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: scale(1.06);
+    color: white;
+}
+
+.container {
+    padding: 30px 20px;
+}
+
+
+.container .home .home-image {
+    width: 30%;
+    height: 70vh;
+    background: rgba(255, 255, 255, 0.445);
+    box-shadow: 0px 0px 6px 1px black;
+    padding: 15px 0px;
+}
+
+.container .home .home-image .image-box {
+    width: 90%;
+    height: 85%;
+    margin: 0px auto;
+    padding: 10px 15px;
+}
+
+.container .home .home-image .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .home .home-image .row i {
+    margin: 10px 20px;
+    font-size: 25px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container .home .home-image .row i:hover {
+    color: var(--skin-color);
+}
+
+.container .home .home-image .row .image-title {
+    font-size: 20px;
+    font-family: var(--Clikes_font), cursive;
+    font-weight: 600;
+}
+
+#my-jobs {
+    font-family: monospace;
+    font-size: 24px;
+    border-right: 2px solid black;
+    padding-right: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* common  */
+.blur-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.mode {
+    border: 1px solid;
+    padding: 2px 0px;
+    border-radius: 41px;
+    width: 60px;
+    box-shadow: inset 0px 0px 1px var(--skin-color), -1px 0px 2px var(--skin-color), -1px 0px 2px var(--skin-color), inset 1px 1px 5px var(--skin-color), inset -1px -2px 0px var(--skin-color);
+}
+
+.fa-mode {
+    border: 1px solid black;
+    padding: 4px 6px;
+    font-size: 16px;
+    border-radius: 26px;
+    cursor: pointer;
+}
+
+
+.dark-theme {
+
+    background: black;
+    color: white;
+}
+
+.light-theme {
+
+    background: white;
+    color: black;
+}
+
+
+/* about page  */
+.working-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+.fa-wa {
+    font-size: 30px;
+}
+
+.working-about .box {
+    border: 1px solid;
+    padding: 30px 50px;
+    border-radius: 78px;
+    text-align: center;
+}
+
+.working-about .box:hover p {
+    transform: scale(2);
+    transition: transform 0.5s ease;
+}
+
+.working-about p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    user-select: none;
+}
+
+#project-success {
+    background: yellow;
+}
+
+#project-pending {
+    background: lightgreen;
+}
+
+#project-working {
+    background: lightseagreen;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SErvice >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.service {
+    /* border: 1px solid; */
+    margin-top: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.service .box {
+    width: 270px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px 1px white;
+    padding: 10px;
+}
+
+.service .box .image {
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.service .box .image img {
+    height: 100%;
+    width: 100%;
+    border: 5px solid transparent;
+    border-image: linear-gradient(#0003, #023);
+    border-image-slice: 1;
+    transition: transform 0.5s ease, border 0.5s ease;
+}
+
+.service .box .image img:hover {
+    transform: scale(1.09);
+}

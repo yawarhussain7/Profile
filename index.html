@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal WEb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color-1.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <header>
+        <div class="Name">
+            <h1>Y<span>awar</span></h1>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home" ></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user" ></i> About</a></li>
+                <li><a href="#service"><i class="fa fa-list" ></i> Service</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments" ></i> Contact</a></li>
+            </ul>
+        </nav>
+       
+        <div class="mode">
+            <span>
+                <i class="fa-solid fa-moon fa-mode" id="dark-mode" ></i>
+                <i class="fa-solid fa-sun fa-mode" id="light-mode" style="display: none;"></i></span>
+        </div>
+     
+    </header>
+
+    <div class="container">
+            <!-- Home page  -->
+        <section class="home" id="home">
+            <div class="home-content">
+
+                <div class="dev-name"><h3>I am  <span id="my-jobs">Software Architect</span></h3></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ex voluptates eum odit reprehenderit aperiam, facere delectus aliquid atque non tenetur vitae necessitatibus rem, laborum culpa eius possimus, quibusdam soluta minima sapiente odio maxime?</p>
+
+                <a href="#" class="btn">Hire Me</a>
+
+            </div>
+            <div class="home-image blur-box">
+
+                <div class="image-box" >
+                    <img src="./image3.jpg" alt="" id="player-image">
+                </div>
+                <div class="row">
+                   <i class="fa-solid fa-backward-step" id="prev-image"></i> <div class="image-title" id="image-title">This is title</div><i class="fa-solid fa-forward-step" id="next-image"></i>
+                </div>
+
+            </div>
+        </section>
+        <!-- ABout us  -->
+        <section class="about" id="about">
+
+            <h1 style="text-align: center;">About Me</h1>
+            <div class="working-about">
+                    <div class="box" id="project-success">
+                       <i class="fa-solid fa-square-check fa-wa" ></i>
+                        <p></p>
+                        <h5>Success</h5>
+                    </div>
+                    <div class="box" id="project-pending">
+                        <i class="fa-solid fa-hourglass-half fa-wa"></i>
+                        <p>60+</p>
+                        <h5>Pending</h5>
+                    </div>
+                    <div class="box" id="project-working">
+                        <i class="fa-solid fa-list-check fa-wa"></i>
+                        <p>90+</p>
+                        <h5>Working</h5>
+                    </div>
+            </div>
+
+            
+        </section>
+
+
+        <h1>Our Service</h1>
+        <section class="service" id="service">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="./portfolio/portfolio-1.jpg" alt="">
+                    </div>
+                    <span><h4>Hello</h4></span>
+                    <article>THis is article</article>
+                    <button class="btn">See more</button>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="./portfolio/portfolio-2.jpg" alt="">
+                    </div>
+                    <span><h4>Hello</h4></span>
+                    <article>THis is article</article>
+                    <button class="btn">See more</button>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="./portfolio/portfolio-3.jpg" alt="">
+                    </div>
+                    <span><h4>Hello</h4></span>
+                    <article>THis is article</article>
+                    <button class="btn">See more</button>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="./portfolio/portfolio-4.jpg" alt="">
+                    </div>
+                    <span><h4>Hello</h4></span>
+                    <article>THis is article</article>
+                    <button class="btn">See more</button>
+                </div>
+
+
+        </section>
+        <!-- // Contact page  -->
+         
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
